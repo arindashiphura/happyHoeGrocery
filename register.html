@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Happy Hoe Grocery</title>
+    <link rel="stylesheet" href="assets/css/login.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <a href="index.html">
+        <img src="assets/images/hhg.jpg" alt="Happy Hoe Grocery Logo" class="logo">
+    </a>
+    
+        <nav>
+           
+            <ul class="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="sales.html">Sales</a></li>
+                <li><a href="stocks.html">Stocks</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                
+            </ul>
+        </nav>
+        <header style="font-size: 50px; color: black; font-family: fantasy;"> LOGIN WITH HHG</header>
+    
+    <!-- Main Registration Form -->
+    <main>
+        <h1>Register</h1>
+        <form action="/register" method="POST">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="role">Role</label>
+            <select id="role" name="role" required>
+                <option value="administrator">Administrator</option>
+                <option value="manager">Manager</option>
+                <option value="sales_agent">Sales Agent</option>
+            </select>
+
+            <button type="submit">Register</button>
+        </form>
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-section about">
+            <h2>About Us</h2>
+            <p>Happy Hoe Grocery Ltd. is a leading wholesale produce distributor. We pride ourselves on providing fresh and quality produce to our customers.</p>
+          </div>
+          <div class="footer-section quick-links">
+            <h2>Quick Links</h2>
+            <ul>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-section contact">
+            <h2>Contact Us</h2>
+            <p><i class="fas fa-map-marker-alt"></i> 1234 Street, City, Country</p>
+            <p><i class="fas fa-phone"></i> +123 456 7890</p>
+            <p><i class="fas fa-envelope"></i> info@happyhoegrocery.com</p>
+          </div>
+          <div class="footer-section social-media">
+            <h2>Follow Us</h2>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+          <div class="footer-section newsletter">
+            <h2>Newsletter</h2>
+            <form>
+              <input type="email" placeholder="Your Email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Happy Hoe Grocery Ltd. | Designed by Your Name</p>
+        </div>
+      </footer>
+</body>
+</html>
