@@ -1,115 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Hoe Grocery Login</title>
-    <link rel="stylesheet" href="assets/bootstrap5/css/bootstrap.css" >
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
-<body>
-    <nav>
-        <a href="index.html">
-            <img src="assets/images/hhg.jpg" alt="Happy Hoe Grocery Logo" class="logo">
-        </a>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="sales.html">Sales</a></li>
-            <li><a href="stocks.html">Stocks</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="login.html">Login</a></li>
-            
-        </ul>
-    </nav>
-    <header style="font-size: 50px; color: black; font-family: fantasy;"> LOGIN WITH HHG</header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Hoe Grocery - Login</title>
+    <link rel="stylesheet" href="assets/bootstrap5/css/bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
 
+  <body>
+    <header>
+      <p>Go back to <a href="index.html">Home Page</a></p>
+    </header>
 
-    <p class="placeholder-glow">
-        <span class="placeholder col-12"></span>
-      </p>
-      
-      <p class="placeholder-wave">
-        <span class="placeholder col-12"></span>
-      </p>
+    <main class="form-section">
+      <h2>Login</h2>
+      <form id="login-form">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /><br />
 
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required /><br />
 
-    <div class="login-container">
-        <!-- Login Form will go here -->
+        <a href="forgot-password.html">Forgot Password?</a><br />
 
-        <div class="login-container">
-            <h2>Login</h2>
-            <form action="login.php" method="post">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required><br>
-        
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br>
-        
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required><br>
-        
-                <a href="forgot-password.html">Forgot Password?</a><br>
-        
-                <input type="submit" value="Login">
-            </form>
-            <p>Don't have an account? <a href="register.html">Register here</a></p>
+        <input
+          type="submit"
+          class="btn btn-primary custom-button"
+          value="Login"
+        />
+
+        <p>Don't have an account? <a href="register.html">Register here</a></p>
+      </form>
+    </main>
+
+    <footer id="footer">
+      <div class="container">
+        <div class="copyright">
+          &copy; Copyright <strong><span>HAPPY HOE GROCERY</span></strong
+          >. All Rights Reserved
         </div>
-        
-    </div>
-
-
-    </div>
-    <footer>
-        <div class="footer-container">
-          <div class="footer-section about">
-            <h2>About Us</h2>
-            <p>Happy Hoe Grocery Ltd. is a leading wholesale produce distributor. We pride ourselves on providing fresh and quality produce to our customers.</p>
-          </div>
-          <div class="footer-section quick-links">
-            <h2>Quick Links</h2>
-            <ul>
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#services">Services</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-          <div class="footer-section contact">
-            <h2>Contact Us</h2>
-            <p><i class="fas fa-map-marker-alt"></i> 1234 Street, City, Country</p>
-            <p><i class="fas fa-phone"></i> +123 456 7890</p>
-            <p><i class="fas fa-envelope"></i> info@happyhoegrocery.com</p>
-          </div>
-          <div class="footer-section social-media">
-            <h2>Follow Us</h2>
-            <div class="social-icons">
-              <a href="#"><i class="fab fa-facebook-f"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
-              <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-          </div>
-          <div class="footer-section newsletter">
-            <h2>Newsletter</h2>
-            <form>
-              <input type="email" placeholder="Your Email" required>
-              <button type="submit">Subscribe</button>
-            </form>
-          </div>
+        <div class="credits">
+          Designed by <a href="#">Javascript group B</a>
         </div>
-        <div class="footer-bottom">
-          <p>&copy; 2024 Happy Hoe Grocery Ltd. | Designed by Your Name</p>
-        </div>
-      </footer>
+      </div>
+    </footer>
 
-
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/bootstrap5/js/bootstrap.bundle.js"></script>
+  </body>
 </html>
